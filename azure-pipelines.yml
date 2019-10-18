@@ -13,7 +13,8 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: | 
+- script: |
+    pip install --upgrade --user pip 
     pip install wheel
     pip install pytest
     pip install pytest-cov
