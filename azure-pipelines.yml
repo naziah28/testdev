@@ -15,8 +15,8 @@ steps:
 
 - script: |
     sudo python3 -m pip uninstall pip && sudo apt install python3-pip --reinstallip install wheel
-    pip install wheel
-    pip install pytest
-    pip install pytest-cov
+    pip3 install wheel
+    pip3 install pytest
+    pip3 install pytest-cov
     pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
   displayName: 'Test with pytest'
